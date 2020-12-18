@@ -21,6 +21,10 @@ public class Conto {
         totale = totale + somma - tasse;
     }
     
+    synchronized void preleva(int somma){
+        totale = totale + somma - tasse;
+    }
+    
     synchronized int saldo(){
         return totale;
     }
